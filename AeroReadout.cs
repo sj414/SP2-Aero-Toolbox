@@ -288,7 +288,7 @@ namespace VesselSwitcher
           catch (System.Exception e)
           {
               // Defensive (one bad frame must not kill the panel) but NOT silent — surface the first few
-              // exceptions so "values just disappeared" is diagnosable instead of a mystery.
+              // exceptions so a stalled readout can be diagnosed.
               if (_updErrCount < 5)
               {
                   _updErrCount++;

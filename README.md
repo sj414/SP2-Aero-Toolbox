@@ -13,12 +13,6 @@ An in-editor aerodynamics readout panel for [SimplePlanes 2](https://www.simplep
 - **Scope toggle** — analyse the selected wing + its mirror + spanwise-connected sections, or every lifting surface on the craft
 - Native-styled UI: clones the game's own buttons and uses SP2's UI sounds, so it looks and sounds like part of the game
 
-## Is it safe?
-
-It's a **read-only** tool. It reads the geometry of the wing you've selected and runs the game's aero solver to draw graphs. It does **not** modify your craft, write save files, touch the network, or change anything in the game world. Everything it does is client-side and visual.
-
-The full source is right here — read `AeroReadout.cs` and `Plugin.cs` before running anything. That's the whole mod.
-
 ## Install
 
 1. Install [BepInEx](https://github.com/BepInEx/BepInEx) (5.x, x64) into your SimplePlanes 2 folder
