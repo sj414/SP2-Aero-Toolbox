@@ -15,10 +15,54 @@ An in-editor aerodynamics readout panel for [SimplePlanes 2](https://www.simplep
 
 ## Install
 
-1. Install [BepInEx](https://github.com/BepInEx/BepInEx) (5.x, x64) into your SimplePlanes 2 folder
-2. Download `AeroToolbox.dll` from the [Releases](../../releases) page
-3. Drop it in `SimplePlanes 2/BepInEx/plugins/`
-4. Launch the game, open the wing editor, click the **Aero** tab
+***BEFORE INSTALLING PLEASE BACK UP CRAFTS. protect your work first. Your crafts and game data live separately from the game install, here:
+
+%USERPROFILE%\AppData\LocalLow\Jundroo\SimplePlanes 2\
+
+## Step 1 — Find your SimplePlanes 2 folder
+In Steam: right-click **SimplePlanes 2** → **Manage** → **Browse local files**. A folder opens containing `SimplePlanes 2.exe`. Keep this window open — this is where everything goes.
+
+## Step 2 — Install BepInEx
+1. Download **BepInEx 5.x (x64)** for Windows: https://github.com/BepInEx/BepInEx/releases
+   - Get the file named like `BepInEx_win_x64_5.4.23.x.zip` (the **x64** one — SP2 is 64-bit).
+2. Open the zip and **extract its contents directly into the SimplePlanes 2 folder** (the one with `SimplePlanes 2.exe`).
+3. When done, that folder should now also contain `winhttp.dll`, `doorstop_config.ini`, and a `BepInEx` folder — sitting **next to** the .exe, not in a subfolder.
+
+## Step 3 — Run the game once
+Launch SimplePlanes 2 normally, let it reach the main menu, then quit. This first run makes BepInEx generate its folders — including **`BepInEx/plugins/`**, where mods go.
+
+## Step 4 — Install Aero Toolbox
+1. Download **`AeroToolbox.dll`** from the releases page: https://github.com/sj414/SP2-Aero-Toolbox/releases/latest
+2. Move `AeroToolbox.dll` into:
+   ```
+   SimplePlanes 2/BepInEx/plugins/
+   ```
+
+## Step 5 — Verify it works
+1. Launch the game and open the **wing editor** (select a wing → wrench/edit).
+2. You'll see a new **Aero** tab/button in the wing-editor panel. Click it — graphs and stats appear.
+
+That's it.
+
+---
+
+## Troubleshooting
+
+**No "Aero" tab shows up**
+- Confirm the DLL is at `BepInEx/plugins/AeroToolbox.dll` (not in a subfolder, not still in Downloads).
+- Confirm you used the **x64** BepInEx, and that `winhttp.dll` sits next to `SimplePlanes 2.exe`.
+- Check `BepInEx/LogOutput.log` — search for `Aero Toolbox loaded`. If it's there, the mod loaded fine; reopen the wing editor.
+
+**BepInEx folder never appeared**
+- You extracted into the wrong place. The `BepInEx` folder must be next to `SimplePlanes 2.exe`. Re-extract and run the game once more.
+
+**Want to uninstall**
+- Delete `AeroToolbox.dll` from `BepInEx/plugins/`. To remove modding entirely, delete `winhttp.dll`, `doorstop_config.ini`, `.doorstop_version`, and the `BepInEx` folder.
+
+**Updating**
+- Replace `AeroToolbox.dll` in `plugins/` with the newer one. SP2 must be closed (the file locks while running).
+
+---
 
 ## Building from source
 
