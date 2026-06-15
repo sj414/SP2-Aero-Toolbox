@@ -2,7 +2,7 @@
 
 An in-editor aerodynamics readout panel for [SimplePlanes 2](https://www.simpleplanes.com/). It injects an **Aero** tab into the wing editor that shows live, physics-accurate curves and stats for the wing you're building — driven by SP2's *own* aerodynamics solver, not a re-implementation.
 
-![screenshot](docs/screenshot.png)
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/3045b4b0-f27c-4e2b-9dc2-07619a670e2e" />
 
 ## What it does
 
