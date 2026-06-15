@@ -1,0 +1,10 @@
+# Build output
+bin/
+obj/
+*.user
+*.suo
+
+# Game / BepInEx assemblies — DO NOT REDISTRIBUTE.
+# These are copyrighted SimplePlanes 2 / Unity / BepInEx DLLs. Provide your own from your install.
+lib/
+*.dll
