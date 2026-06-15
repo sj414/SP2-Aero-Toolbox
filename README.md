@@ -13,6 +13,12 @@ An in-editor aerodynamics readout panel for [SimplePlanes 2](https://www.simplep
 - **Scope toggle** — analyse the selected wing + its mirror + spanwise-connected sections, or every lifting surface on the craft
 - Native-styled UI: clones the game's own buttons and uses SP2's UI sounds, so it looks and sounds like part of the game
 
+## Known bugs
+
+- Sometimes when switching from flying an aircraft back into the editor, the solver fails to pick up aero data, and the plots are left empty. Annoying, but a restart fixes it
+
+- Often the sweep for flaps / slats will not return if the surface has custom FunkyTrees inputs, no fix for this just yet
+
 ## Install
 
 ***BEFORE INSTALLING PLEASE BACK UP CRAFTS. protect your work first. Your crafts and game data live separately from the game install, here:
